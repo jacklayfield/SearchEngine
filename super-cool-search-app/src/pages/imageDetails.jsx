@@ -20,11 +20,13 @@ export const ImageDetails = () => {
         <div className="flex justify-center items-center pb-6">
           {" "}
           <h1>By: {imageData ? imageData.user : "Error! No Image Selected"}</h1>
-          <img
-            className="rounded-full h-32 object-cover pl-3"
-            src={imageData?.userImageURL}
-            alt="None found"
-          />
+          {imageData?.userImageURL && (
+            <img
+              className="rounded-full h-32 object-cover pl-3"
+              src={imageData?.userImageURL}
+              alt="None found"
+            />
+          )}
         </div>
 
         <h3>Tags: {imageData ? imageData.tags : "Error! No Image Selected"}</h3>
