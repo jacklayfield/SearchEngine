@@ -1,2 +1,2 @@
-# SuperCoolSearch
-Image search app
+# Search Engine
+Basic image search app using the Pixabay API. 
