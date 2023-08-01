@@ -9,12 +9,8 @@ import { NavBar } from "./components/navBar";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/*" element={<App />} />
-      </Routes>
-    </BrowserRouter>
+    <NavBar />
+    <App />
   </React.StrictMode>
 );
 

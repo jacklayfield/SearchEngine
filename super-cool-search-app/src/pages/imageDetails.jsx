@@ -22,7 +22,7 @@ export const ImageDetails = () => {
           <h1>By: {imageData ? imageData.user : "Error! No Image Selected"}</h1>
           {imageData?.userImageURL && (
             <img
-              className="rounded-full h-32 object-cover pl-3"
+              className="rounded-full h-[100px] object-cover pl-3"
               src={imageData?.userImageURL}
               alt="None found"
             />

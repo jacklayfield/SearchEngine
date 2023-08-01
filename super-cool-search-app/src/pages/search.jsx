@@ -14,6 +14,7 @@ export const Search = () => {
 
   useEffect(() => {
     if (searchText.length > 0) {
+      console.log("refetched");
       /* IMPORTANT: In order to successfully make this api call you will 
       have to define your own .env file with your own unique "REACT_APP_API_KEY" */
       axios

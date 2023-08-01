@@ -16,7 +16,7 @@ export const ImageGrid = ({ imageData }) => {
           <Row>
             {row.map((image, i) => {
               return (
-                <Col key={i}>
+                <Col key={String(i) + String(i)}>
                   <div className="p-1">
                     <Link to="/imageDetails" state={{ data: image }}>
                       <img
